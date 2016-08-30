@@ -14,7 +14,7 @@ To run this project the following libraries are required:
 
 # Usage
 
-The code allows a manual override of the Drone control at any time. Even if the drone is in the automous flight the manuel comands work but maybe overwritten if the marker is in the field of view. The focus must be on the black pygame window not on the video window. Steering:
+The code allows a manual override of the Drone control at any time. Even if the drone is in the autonomous flight the manual commands work but maybe overwritten if the marker is in the field of view. The drone follows the marker with the id = 0. If the drone detects a marker with the id = 1 if lands if it was flying before or takes off if it was not flying before. The focus must be on the black pygame window not on the video window. Steering:
 
 Key | Action
 ----- | ------
@@ -24,9 +24,5 @@ UP/DOWN | arrow keys fly upwards / downwards
 ENTER | takeoff
 SPACE | land
 BACKSPACE | emergency rotor stop (drop like a stone)
-1 | activate autonmous flight mode
-2 | deactive autonmous flight mode
-
-
-
-
+1 | activate autonomous flight mode
+2 | deactivate autonomous flight mode
